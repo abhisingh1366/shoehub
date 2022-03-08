@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  
+    color: #ffffff;
+    background-color: black;
+    font-size: 35px;
+    border-radius: 5px;
+    display: inline;
+    padding: 16px 32px;
+}
+</style>
+</head>
+<body>
+
+<h2>Opacity with Box</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+  <img src="/image/footwear-1838376_1280.jpg" alt="Avatar" class="image">
+  <div class="middle">
+    <div class="text"><i class="fa fa-heart" aria-hidden="true"></i></div>
+    <div class="text"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+  </div>
+</div>
+<div class="container">
+    <img src="/image/footwear-1838376_1280.jpg" alt="Avatar" class="image">
+    <div class="middle">
+      <div class="text"><i class="fa fa-heart" aria-hidden="true"></i></div>
+      <div class="text"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+    </div>
+  </div>  
+</body>
+</html>
